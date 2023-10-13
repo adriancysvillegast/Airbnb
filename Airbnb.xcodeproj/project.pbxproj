@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09203C652AD7435D00D28013 /* AirbnbListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09203C642AD7435D00D28013 /* AirbnbListingView.swift */; };
+		09203C672AD7445300D28013 /* AirbnbListingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09203C662AD7445300D28013 /* AirbnbListingCardView.swift */; };
+		09203C692AD7453B00D28013 /* AirbnbDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09203C682AD7453B00D28013 /* AirbnbDetailView.swift */; };
 		0988345E2AD5ED1D0002DB5E /* AirbnbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988345D2AD5ED1D0002DB5E /* AirbnbApp.swift */; };
 		098834602AD5ED1D0002DB5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988345F2AD5ED1D0002DB5E /* ContentView.swift */; };
 		098834622AD5ED230002DB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098834612AD5ED230002DB5E /* Assets.xcassets */; };
 		098834652AD5ED230002DB5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 098834642AD5ED230002DB5E /* Preview Assets.xcassets */; };
+		0988346F2AD5EFA10002DB5E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0988346E2AD5EFA10002DB5E /* APIService.swift */; };
+		09FE9BFF2AD850D5007D2B18 /* AirbnbListeningResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FE9BFE2AD850D5007D2B18 /* AirbnbListeningResponse.swift */; };
+		09FE9C012AD8511E007D2B18 /* AirbnbListings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FE9C002AD8511E007D2B18 /* AirbnbListings.swift */; };
+		09FE9C042AD86510007D2B18 /* AirbnbListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FE9C032AD86510007D2B18 /* AirbnbListingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09203C642AD7435D00D28013 /* AirbnbListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingView.swift; sourceTree = "<group>"; };
+		09203C662AD7445300D28013 /* AirbnbListingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingCardView.swift; sourceTree = "<group>"; };
+		09203C682AD7453B00D28013 /* AirbnbDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbDetailView.swift; sourceTree = "<group>"; };
 		0988345A2AD5ED1D0002DB5E /* Airbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0988345D2AD5ED1D0002DB5E /* AirbnbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbApp.swift; sourceTree = "<group>"; };
 		0988345F2AD5ED1D0002DB5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		098834612AD5ED230002DB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		098834642AD5ED230002DB5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0988346E2AD5EFA10002DB5E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		09FE9BFE2AD850D5007D2B18 /* AirbnbListeningResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListeningResponse.swift; sourceTree = "<group>"; };
+		09FE9C002AD8511E007D2B18 /* AirbnbListings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListings.swift; sourceTree = "<group>"; };
+		09FE9C032AD86510007D2B18 /* AirbnbListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		0988345C2AD5ED1D0002DB5E /* Airbnb */ = {
 			isa = PBXGroup;
 			children = (
+				09FE9C022AD864E9007D2B18 /* ViewModel */,
+				0988346D2AD5EF650002DB5E /* CoreService */,
+				0988346C2AD5EF5E0002DB5E /* Models */,
+				0988346B2AD5EF580002DB5E /* Views */,
 				0988345D2AD5ED1D0002DB5E /* AirbnbApp.swift */,
-				0988345F2AD5ED1D0002DB5E /* ContentView.swift */,
 				098834612AD5ED230002DB5E /* Assets.xcassets */,
 				098834632AD5ED230002DB5E /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				098834642AD5ED230002DB5E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0988346B2AD5EF580002DB5E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0988345F2AD5ED1D0002DB5E /* ContentView.swift */,
+				09203C642AD7435D00D28013 /* AirbnbListingView.swift */,
+				09203C662AD7445300D28013 /* AirbnbListingCardView.swift */,
+				09203C682AD7453B00D28013 /* AirbnbDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0988346C2AD5EF5E0002DB5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09FE9BFE2AD850D5007D2B18 /* AirbnbListeningResponse.swift */,
+				09FE9C002AD8511E007D2B18 /* AirbnbListings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0988346D2AD5EF650002DB5E /* CoreService */ = {
+			isa = PBXGroup;
+			children = (
+				0988346E2AD5EFA10002DB5E /* APIService.swift */,
+			);
+			path = CoreService;
+			sourceTree = "<group>";
+		};
+		09FE9C022AD864E9007D2B18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09FE9C032AD86510007D2B18 /* AirbnbListingsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +191,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				098834602AD5ED1D0002DB5E /* ContentView.swift in Sources */,
+				09FE9C042AD86510007D2B18 /* AirbnbListingsViewModel.swift in Sources */,
+				09203C692AD7453B00D28013 /* AirbnbDetailView.swift in Sources */,
+				09FE9C012AD8511E007D2B18 /* AirbnbListings.swift in Sources */,
+				09203C652AD7435D00D28013 /* AirbnbListingView.swift in Sources */,
+				09203C672AD7445300D28013 /* AirbnbListingCardView.swift in Sources */,
+				0988346F2AD5EFA10002DB5E /* APIService.swift in Sources */,
+				09FE9BFF2AD850D5007D2B18 /* AirbnbListeningResponse.swift in Sources */,
 				0988345E2AD5ED1D0002DB5E /* AirbnbApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
